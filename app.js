@@ -29,11 +29,6 @@ Promise.all(
 });
 
 
-function generateOptions(data){
-    const options = data.map(item => `
-    <option value='${item}'>${item}</option>
-    `).join('')
-}
 
 
 function generateImage(data){
