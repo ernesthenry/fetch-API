@@ -30,19 +30,6 @@ Promise.all(
 
 
 
-fetchData('https://dog.ceo/api/breeds/image/random')
-.then(data => generateImage(data.message))
-
-fetchData('https://dog.ceo/api/breeds/list/all')
-.then(data => generateOptions(data.message))
-
-
-function generateOptions(data){
-    const options = data.map(item => `
-    <option value='${item}'>${item}</option>
-    `).join('')
-}
-
 
 function generateImage(data){
     html = `
