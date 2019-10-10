@@ -72,7 +72,7 @@ function fetchBreedImage() {
     const img = card.querySelector('img');
     const p = card.querySelector('p');
 
-    fetchData(`https://dog.ceo/api/${breed}/hound/images`)
+    fetchData(`https://dog.ceo/api/breed/${breed}/images`)
         .then(data => {
             img.src = data.message;
             img.alt = breed;
